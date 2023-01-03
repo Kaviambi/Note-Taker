@@ -1,10 +1,10 @@
 const express = require("express");
 const fs = require("fs");
-// const path = require('path');
+const path = require('path');
 
 const routes = require('./routes/routes');
 const app = express();
-const PORT = process.env.port || 3002;
+const PORT = process.env.port || 3000;
 
 app.use(express.urlencoded({extended: true }));
 app.use(express.json());

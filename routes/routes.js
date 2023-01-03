@@ -16,7 +16,7 @@ fs.readFile("db/db.json", "utf8", (err,data) => {
         let newNote = req.body;
         notes.push(newNote);
         updateDb();
-        return console.log("New node added");
+       console.log(req.body);
     });
 
     app.get("/api/notes/:id", (req, res) => {
@@ -28,6 +28,7 @@ fs.readFile("db/db.json", "utf8", (err,data) => {
     app.delete("/api/notes/:id", (req, res) => {
         notes.splice(req.params.id, 1);
         updateDb();
+        console.log(req.params.id);
     });
 
     app.get('/', (req, res) =>
