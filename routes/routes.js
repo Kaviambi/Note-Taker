@@ -1,7 +1,8 @@
 const express = require("express");
 const fs = require('fs');
-const app = express();
 const path = require('path');
+const app = express();
+
 
 fs.readFile("db/db.json", "utf8", (err,data) => {
     if(err) throw err;
@@ -16,7 +17,7 @@ fs.readFile("db/db.json", "utf8", (err,data) => {
         let newNote = req.body;
         notes.push(newNote);
         updateDb();
-       console.log(req.body);
+        console.log(req.body);
     });
 
     app.get("/api/notes/:id", (req, res) => {
@@ -27,8 +28,8 @@ fs.readFile("db/db.json", "utf8", (err,data) => {
     
     app.delete("/api/notes/:id", (req, res) => {
         notes.splice(req.params.id, 1);
+        res.json(true);
         updateDb();
-        console.log(req.params.id);
     });
 
     app.get('/', (req, res) =>
