@@ -28,3 +28,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 The following images show the web application's appearance and functionality:
+(![Screenshot1](images/Capture1.JPG))
+![Screenshot2](images/Capture2.JPG)
+![Screenshot3](images/Capture3.JPG)
