@@ -17,6 +17,7 @@ fs.readFile("db/db.json", "utf8", (err,data) => {
         let newNote = req.body;
         notes.push(newNote);
         updateDb();
+        res.json(notes);
         console.log(req.body);
     });
 

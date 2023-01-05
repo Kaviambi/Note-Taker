@@ -28,6 +28,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 The following images show the web application's appearance and functionality:
-(![Screenshot1](images/Capture1.JPG))
-![Screenshot2](images/Capture2.JPG)
-![Screenshot3](images/Capture3.JPG)
+(![New note adding to the list](images/Capture1.JPG))
+![Trying to add new note](images/Capture2.JPG)
+![New note is saved to the list](images/Capture3.JPG)
+![Deleting the first note from the list](images/Capture4.JPG)
+
