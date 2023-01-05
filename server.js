@@ -4,7 +4,7 @@ const path = require('path');
 
 const routes = require('./routes/routes');
 const app = express();
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({extended: true }));
 app.use(express.json());
