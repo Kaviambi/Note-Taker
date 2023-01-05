@@ -33,3 +33,6 @@ The following images show the web application's appearance and functionality:
 ![New note is saved to the list](images/Capture3.JPG)
 ![Deleting the first note from the list](images/Capture4.JPG)
 
+Heroku Deployed Application link - https://notetaker-kk.herokuapp.com/
+
+GitHub Repo Link - https://github.com/Kaviambi/Note-Taker.git
